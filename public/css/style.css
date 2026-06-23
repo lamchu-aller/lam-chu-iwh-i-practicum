@@ -1,0 +1,127 @@
+/* ── Reset & Base ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 16px;
+  color: #1a1a1a;
+  background: #fff;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+/* ── Typography ── */
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+/* ── Links ── */
+a {
+  color: #0070d2;
+  text-decoration: underline;
+}
+
+a:hover { color: #005ab3; }
+
+.add-link {
+  display: inline-block;
+  margin-bottom: 1.25rem;
+  font-size: 1rem;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+/* ── Table ── */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+thead tr {
+  background-color: #f2aab4; /* pink header matching screenshot */
+}
+
+thead th {
+  padding: 10px 14px;
+  text-align: center;
+  font-weight: 700;
+  border: 1px solid #ccc;
+}
+
+tbody td {
+  padding: 9px 14px;
+  border: 1px solid #ccc;
+  vertical-align: middle;
+}
+
+tbody tr:hover {
+  background-color: #fafafa;
+}
+
+/* ── Empty state ── */
+.empty-state {
+  color: #666;
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+/* ── Form ── */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 1.25rem;
+}
+
+label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  max-width: 480px;
+  padding: 9px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  transition: border-color 0.15s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  outline: none;
+  border-color: #0070d2;
+  box-shadow: 0 0 0 2px rgba(0, 112, 210, 0.15);
+}
+
+button[type="submit"] {
+  display: inline-block;
+  padding: 10px 24px;
+  background: #0070d2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+button[type="submit"]:hover {
+  background: #005ab3;
+}
